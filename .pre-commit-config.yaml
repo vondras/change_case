@@ -19,6 +19,12 @@ repos:
   - id: mixed-line-ending
     args: ['--fix=auto']
 
+- repo: git://github.com/guykisel/prospector-mirror
+  rev: '7ff847e779347033ebbd9e3b88279e7f3a998b45'
+  hooks:
+  - id: prospector
+    pass_filenames: false
+
 - repo: https://github.com/psf/black
   rev: stable
   hooks:

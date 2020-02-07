@@ -13,8 +13,8 @@ def replacer_factory(replacement: Optional[str]) -> Callable[[Match], str]:
     replacement = replacement if isinstance(replacement, str) else " "
 
     def replace(match: Match) -> str:
-        start, end = match.span()
-        if start == 0 or start == (len(match.string) - len(match.group(0))):
+        start, _ = match.span()
+        if start in (0, len(match.string) - len(match.group(0))):
             return ""
 
         return replacement
