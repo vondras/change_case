@@ -4,6 +4,12 @@ version = "0.1.0"
 description = "String casing helpers"
 authors = ["Clayton VonDras <cvondras@hlkagency.com>"]
 license = "MIT"
+readme = "README.md"
+repository = "https://github.com/vondras/change_case"
+
+packages = [
+    { include = "change_case", from = "src" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.7"
