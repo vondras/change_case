@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "change_case"
+version = "0.1.0"
+description = "String casing helpers"
+authors = ["Clayton VonDras <cvondras@hlkagency.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pre_commit = "^2.0.1"
+pytest = "^5.3.5"
+pytest-cov = "^2.8.1"
+coverage = "^5.0.3"
+black = "^19.10b0"
+
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
